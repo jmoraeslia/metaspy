@@ -26,23 +26,24 @@
     </header>
 
     <main>
+
+
         <section id="report">
             <h2>Report</h2>
-
-
-            <form method="post" action="/process_img" enctype="multipart/form-data">
+        
+            
+        
+            <form method="post" action="/web.py" enctype="multipart/form-data">
                 <label for="file">select a file</label>
-                <input type="file" name="mainFile" id="mainFile">
+                <input type="file" name="file" id="file">
                 <input type="submit" value="analyze" id="generateMainReport">
             </form>
-
-            <section id="mainReport" style="display: none;">
+        
+            <section id="mainReport">
                 <ul>
+               
                 </ul>
             </section>
-
-
-
         </section>
 
         <section id="add">
