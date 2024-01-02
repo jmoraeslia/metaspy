@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/light.css" id="theme">
+    <link rel="stylesheet" href="../static/css/light.css" id="theme">
 
     <title>meta(data)spy</title>
 
@@ -30,43 +30,14 @@
             <h2>Report</h2>
 
 
-            <div>
+            <form method="post" action="/process_img" enctype="multipart/form-data">
                 <label for="file">select a file</label>
                 <input type="file" name="mainFile" id="mainFile">
                 <input type="submit" value="analyze" id="generateMainReport">
-            </div>
+            </form>
 
             <section id="mainReport" style="display: none;">
                 <ul>
-                    <li>Image width: 3024 pixels</li>
-                    <li>Image height: 4032 pixels</li>
-                    <li>Image orientation: Horizontal (normal)</li>
-                    <li>Bits/pixel: 24</li>
-                    <li>Pixel format: YCbCr</li>
-                    <li>Image DPI width: 300 DPI</li>
-                    <li>Image DPI height: 300 DPI</li>
-                    <li>Creation date: 55</li>
-                    <li>Camera focal: 2.8</li>
-                    <li>Camera exposure: 1/60</li>
-                    <li>Camera brightness: 5.14</li>
-                    <li>Camera model: iPhone 8 Plus</li>
-                    <li>Camera manufacturer: Apple</li>
-                    <li>Compression: JPEG (Baseline)</li>
-                    <li>Thumbnail size: 13.5 KB</li>
-                    <li>ISO speed rating: 25</li>
-                    <li>EXIF version: 0232</li>
-                    <li>Date-time original: 55</li>
-                    <li>Date-time digitized: 55</li>
-                    <li>Shutter speed: 5.91</li>
-                    <li>Aperture: 2.97</li>
-                    <li>Exposure bias: -1.29</li>
-                    <li>Focal length: 6.6</li>
-                    <li>Flashpix version: 0100</li>
-                    <li>Focal length in 35mm film: 57</li>
-                    <li>Producer: 16.1.2</li>
-                    <li>Comment: 94% (approximate)</li>
-                    <li>Format version: JFIF 1.01</li>
-                    <li>MIME type: image/jpeg</li>
                 </ul>
             </section>
 
@@ -104,7 +75,7 @@
             <h3>File metadata after modification:</h3>
 
             <ul>
-                <p>no metadata in this file!!</p>
+               
             </ul>
         </div>
     </main>
@@ -113,7 +84,7 @@
         <p>&copy;2023 community. all rights reserved.</p>
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 
 </html>

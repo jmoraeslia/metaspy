@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', save);
 function change() {
 
     if (themeLink.getAttribute('href').includes('light')) {
-        themeLink.setAttribute('href', '../css/dark.css');
+        themeLink.setAttribute('href', '../static/css/dark.css');
         sessionStorage.setItem('theme', 'dark');
     } else {
-        themeLink.setAttribute('href', '../css/light.css');
+        themeLink.setAttribute('href', '../static/css/light.css');
         sessionStorage.setItem('theme', 'light');
     }
 }
@@ -42,17 +42,17 @@ function clean() {
 function theme() {
 
     if (themeLink.getAttribute('href').includes('light')) {
-        themeLink.setAttribute('href', '../css/dark.css');
+        themeLink.setAttribute('href', '../static/css/dark.css');
         sessionStorage.setItem('theme', 'dark');
     } else {
-        themeLink.setAttribute('href', '../css/light.css');
+        themeLink.setAttribute('href', '../static/css/light.css');
         sessionStorage.setItem('theme', 'light');
     }
 }
 function save() {
 
     if (savedTheme) {
-        themeLink.setAttribute('href', `../css/${savedTheme}.css`);
+        themeLink.setAttribute('href', `../static/css/${savedTheme}.css`);
     }
 
 }
