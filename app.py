@@ -1,22 +1,22 @@
-from flask import Flask, render_template, request, redirect, url_for
-from get_data import process_img  
+# web.py
+from flask import Flask, render_template, request
+from get_data import get_metadata
 
 app = Flask(__name__)
 
+# process file received
+@app.route('/', methods=['POST', 'GET'])
+def up_file():
+    if 'file' not in request.files:
+        return "try again;"
 
-@app.route('/index.html', methods=['POST', 'GET'])
-def file_up():
-    
-   
-
-    return render_template('index.html')
+    filename = request.files['file']
 
 
 
 # sources of research
 @app.route('/ref')
 def references():
-    return render_template('ref.html')
-
+    return render_template('/ref.html')
 if __name__ == '__main__':
     app.run(debug=True)
